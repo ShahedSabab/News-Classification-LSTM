@@ -15,3 +15,7 @@ Run the Classification_bbc_articles.py file
 
 Check accuracy.png and loss_function.png for the performance analysis.
 
+# Saved Model
+
+Use saved_model to quickly load the current model.
+
