@@ -13,5 +13,5 @@ Run the Classification_bbc_articles.py file
 
 # Performance
 
-Check accuracy.png and loss_function.png for performance analysis.
+Check accuracy.png and loss_function.png for the performance analysis.
 
