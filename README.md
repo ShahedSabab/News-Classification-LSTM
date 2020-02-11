@@ -13,7 +13,8 @@ Run the Classification_bbc_articles.py file
 
 # Performance
 
-Check accuracy.png and loss_function.png for the performance analysis.
+![Loss Fuction](loss_function.png)
+![Accuracy](accuracy.png)
 
 # Saved Model
 
