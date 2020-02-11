@@ -35,7 +35,7 @@ def create_model():
         tf.keras.layers.Embedding(vocab_size, embedding_dim),
         tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(embedding_dim)),
         # aplying activation
-        tf.keras.layers.Dense(embedding_dim, activation='relu',kernel_regularizer=regularizers.l1(0.01)),
+        tf.keras.layers.Dense(embedding_dim, activation='relu',kernel_regularizer=regularizers.l1(.01)),
         #applying softmax for converting output layers to probability distribution 
         tf.keras.layers.Dense(6, activation = 'softmax')
         ])
@@ -43,12 +43,12 @@ def create_model():
     return model
 
 def plot_graphs(f, history, string):
-  plt.plot(history.history[string])
-  plt.plot(history.history['val_'+string])
-  plt.xlabel("Epochs")
-  plt.ylabel(string)
-  plt.legend([string, 'val_'+string])
-  plt.show()
+    plt.plot(history.history[string])
+    plt.plot(history.history['val_'+string])
+    plt.xlabel("Epochs")
+    plt.ylabel(string)
+    plt.legend([string, 'val_'+string])
+    plt.show()
 
 file_name = "bbc-text.csv"
 
@@ -66,7 +66,7 @@ num_epoch = 20
 labels, articles = file_read(file_name)
 
 # Convert the dataset into train and test datasets
-train_articles, test_articles, train_labels, test_labels = train_test_split(articles, labels, test_size=test_portion, random_state=4)
+train_articles, test_articles, train_labels, test_labels = train_test_split(articles, labels, test_size=test_portion, random_state=41)
 
 #vectorize the texts 
 tokenizer = Tokenizer(num_words = vocab_size, oov_token = oov_tok)
@@ -121,18 +121,17 @@ f2 = plt.figure()
 plot_graphs(f2,history, "loss")
 
 # Save the entire model as a SavedModel.
-my_model_path = os.path.dirname('saved_model/my_model')
-model.save(my_model_path) 
+#my_model_path = os.path.dirname('saved_model/my_model')
+#model.save(my_model_path) 
 
 # =============================================================================
 # #load checkpoint (load weights)
 # latest = tf.train.latest_checkpoint(checkpoint_dir)
 # 
-# 
 # # Load the previously saved weights
 # model.load_weights(latest)
+# 
 # =============================================================================
-
 # =============================================================================
 # Loading model
 # my_model_path = os.path.dirname('saved_model/my_model')
