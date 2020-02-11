@@ -10,7 +10,7 @@ The input data consist of 2225 news articles from the BBC news website correspon
 
 # How to Run
 
-Run the Classification_bbc_articles.py file
+Run the Classification_bbc_articles.py file and check wordEmbedding_bbc_news_data.py for visualization
 
 # Visualization 
 
