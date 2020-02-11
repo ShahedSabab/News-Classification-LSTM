@@ -4,7 +4,7 @@ The input data consist of 2225 news articles from the BBC news website correspon
 
 • TensorFlow 2.0, Keras has been used to train the model.<br/>
 • Word embedding is used in feature generation.<br/>
-• TSNE is used to visualize the word vectors in 2d space.
+• TSNE is used to visualize the word vectors in 2d space.<br/>
 • L1 regularization is applied to prevent overfitting.<br/>
 • 95% accuracy has been achieved.<br/>
 
