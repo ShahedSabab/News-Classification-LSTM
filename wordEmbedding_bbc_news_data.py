@@ -67,7 +67,7 @@ def tsne_plot(model):
     plt.show()
 
 def w2VMOdel(minFreq, window, featureVector, workers):
-    w2v_model = Word2Vec(min_count = 300,
+    w2v_model = Word2Vec(min_count = 400,
                      window = 5,
                      size = 200,
                      workers = 4)
