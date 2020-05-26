@@ -2,7 +2,7 @@
 
 The input data consist of 2225 news articles from the BBC news website corresponding to stories in 5 topical areas (e.g., business, entertainment, politics, sport, tech). LSTM has been applied in the classification task to categorize unknown data. <br/>
 
-• TensorFlow 2.0, Keras has been used to train the model.<br/>
+• TensorFlow 2.0 has been used to train the model.<br/>
 • Word embedding is used in feature generation.<br/>
 • TSNE is used to visualize the word vectors in 2d space.<br/>
 • L1 regularization is applied to prevent overfitting.<br/>
