@@ -1,6 +1,6 @@
 # News-Classification-LSTM
 
-The input data consist of 2225 news articles from the BBC news website corresponding to stories in 5 topical areas (e.g., business, entertainment, politics, sport, tech). LSTM has been applied in the classification task to categorize unknown data. <br/>
+The objective of this project is to classify news category from articles. The input data consist of 2225 news articles from the BBC news website corresponding to stories in 5 topical areas (e.g., business, entertainment, politics, sport, tech). LSTM has been applied in the classification task to categorize articles. <br/>
 
 • TensorFlow 2.0 has been used to train the model.<br/>
 • Word embedding is used in feature generation.<br/>
