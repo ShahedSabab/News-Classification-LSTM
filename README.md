@@ -14,7 +14,7 @@ Run the Classification_bbc_articles.py file and check wordEmbedding_bbc_news_dat
 
 # Visualization 
 
-![Loss Fuction](visualization.png)
+![Word Vectors](visualization.png)
 
 # Performance
 
